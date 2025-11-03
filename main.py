@@ -33,7 +33,7 @@ while True:
             face_img = frame[top:bottom, left:right]
             filename = f"captured_faces/face_{datetime.now().strftime('%Y%m%d_%H%M%S')}_{i}.jpg"
             cv2.imwrite(filename, face_img)
-            print(f"[✅] Wajah disimpan: {filename}")
+            print(f" Wajah disimpan: {filename}")
     elif key == ord('q'):
         break
 
